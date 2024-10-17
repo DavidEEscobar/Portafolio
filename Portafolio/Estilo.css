@@ -1,0 +1,124 @@
+body{
+    background: rgb(252,252,255);
+    margin: 0;
+}
+
+
+
+.Container{
+    padding: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.head{
+    background: #000;
+}
+
+.NombreHead{
+    color: white;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.Nombre{
+    color: white;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+}
+
+.links a{
+    text-decoration: none;
+    color: white;
+}
+
+.Proj{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Proj div{
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 180px;
+    background: white;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.30s ease-out, transform 0.30s ease-out;
+}
+
+.Proj div.show{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+#Proyectos{
+    background-image: url(https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2023/07/duda-resuelta-existen-tantos-lenguajes-programacion-3079266.jpg?tf=3840x);
+    background-size: cover;
+    background-position: center;
+}
+
+.Habilidades{
+    font-family: sans-serif;
+    text-align: center;
+    border: 1px solid black;
+    border-top: none;
+    margin: 0 auto;
+}
+.Habilidades h1{
+    font-size: 2em;
+}
+
+.Grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Grid-L, .Grid-R{
+    background-color: #061b30;
+    color: white;
+    text-align: center;
+    border-right: 1px solid black;
+    border-top: none;
+}
+
+.Grid-L div{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.Grid-L div.show{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Grid-R div{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.Grid-R div.show{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Contacto{
+    padding: 50px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #D6EEEC;
+    text-decoration: underline;
+}
+
